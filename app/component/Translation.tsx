@@ -176,7 +176,7 @@ const Translator = () => {
   };
 
   return (
-    <div className="flex flex-col items-center  w-screen justify-center  min-h-screen">
+    <div className="flex flex-col items-center  w-screen justify-center  min-h-screen px-4">
       {notification && (
         <Notification
           message={notification.message}
@@ -267,7 +267,7 @@ const Translator = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-4 mb-4 w-1/2 ">
+      <div className="flex items-center gap-4 mb-4 md:w-1/2 w-full ">
         <div className="w-full">
           <select
             id="sourceLanguage"

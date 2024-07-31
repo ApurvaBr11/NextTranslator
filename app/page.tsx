@@ -157,7 +157,7 @@ export default function AnimatedText() {
 
   return (
     <div className="flex-col  bg-black text-white  justify-center min-h-screen w-[100%] overflow-hidden">
-      <div className="flex flex-col justify-center items-center h-screen pageone leading-[80px]">
+      <div className="md:flex hidden flex-col justify-center items-center h-screen pageone leading-[80px] ">
         <h1 className="transform-text text-[100px] -z-30 font-black text-gray-100">Transform</h1>
         <h1 className="mid revolution-tex text-[100px] z-10 font-black text-gray-50">Translate Into</h1>
         <h1 className="translate-text text-[100px] z-50 font-black text-gray-100">Revolution</h1>
