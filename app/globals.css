@@ -31,9 +31,49 @@ body {
     text-wrap: balance;
   }
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: 2px solid purple; */
+
+.bgtt {
+  background-image: url('https://i.pinimg.com/564x/a2/c1/ce/a2c1cead6f8468ea01bd9fba2d4b85ba.jpg');
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: anime 50s ease-in-out;
+}
+
+
+
+@keyframes anime {
+  0% {
+      background-position: 0% 0%;
+  }
+  20% {
+      background-position: 50% 10%;
+  }
+  40% {
+      background-position: 100% 50%;
+  }
+  60% {
+      background-position: 50% 90%;
+  }
+  80% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(57, 57, 57, 0.447);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 78, 81);
+  border-radius: 20px;
 }
