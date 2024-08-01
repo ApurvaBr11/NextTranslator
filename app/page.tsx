@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Translator from './component/Translation';
+import Navbar from './component/Navbar';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -157,7 +158,8 @@ export default function AnimatedText() {
 
   return (
     <div className="flex-col  bg-black text-white  justify-center min-h-screen w-[100%] overflow-hidden">
-      <div className="absolute bottom-0 left-1/4 rotate-60 scale-75" >
+      <Navbar/>
+      <div className="absolute bottom-0 left-1/4 rotate-60 scale-75 md:flex hidden arrow" >
         <img src="/arrow.png" alt="" />
       </div>
       <div className="md:flex hidden flex-col justify-center items-center h-screen pageone leading-[80px] ">
